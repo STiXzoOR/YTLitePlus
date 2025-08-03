@@ -24,7 +24,7 @@ if [ -z "$PATHTOYT" ]; then
     fi
 fi
 
-make package THEOS_PACKAGE_SCHEME=rootless IPA="$PATHTOYT" FINALPACKAGE=1
+make package THEOS_PACKAGE_SCHEME=rootless IPA="$PATHTOYT" FINALPACKAGE=1 SIDELOAD=1
 
 # SHASUM
 if [[ $? -eq 0 ]]; then
